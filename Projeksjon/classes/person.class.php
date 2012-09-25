@@ -9,6 +9,7 @@ class Person
 	public $user_flags = Array();
 	function __construct($navn, $brukernavn, $epost, $avgangsaar, $tilganger, $bilde, $bursdag) 
 	{
+		
 		$this->name = $navn;
 		$this->email = $epost;
 		$this->username = $brukernavn;
@@ -17,6 +18,10 @@ class Person
 		$this->graduateYear = $avgangsaar;
 		
 	}
+	public static function retrievePerson($id, $dbh)
+			{
+				throw new Exception("Not yet implemented :(");
+			}
 	
 }
 
